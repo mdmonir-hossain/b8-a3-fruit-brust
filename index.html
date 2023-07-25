@@ -26,6 +26,12 @@
                     fontFamily: {
                         lato: ['Lato', 'sans-serif'],
 
+                    },
+                    backgroundImage: {
+                        'banner-one': "url('./images/banner1.png')",
+                        'banner-two': "url('./images/banner2.png')",
+                        'banner-three': "url('./images/banner3.png')",
+                        'banner-four': "url('./images/banner4.png')",
                     }
                 }
             }
@@ -38,7 +44,7 @@
         <!-- navbar section  -->
         <nav>
             <div
-                class="navbar rounded-[50px] flex-row-reverse md:flex-row lg:flex-row bg-fruit-primary md:text-white lg:text-white  bg-white md:bg-fruit-primary lg:bg-fruit-primary ">
+                class="navbar rounded-[50px] p-5 flex-row-reverse md:flex-row lg:flex-row bg-fruit-primary md:text-white lg:text-white  bg-white md:bg-fruit-primary lg:bg-fruit-primary ">
                 <div class="navbar-start justify-end md:justify-start lg:justify-start ">
                     <div class="hidden lg:flex">
                         <ul class="menu menu-horizontal px-1">
@@ -61,7 +67,11 @@
                             <li><a>About Us</a></li>
                             <li><a>Shop</a></li>
                             <li><a>All Fruits</a></li>
+                            <li><a><input type="text" placeholder="Search here"
+                                        class="input  rounded-3xl w-24 md:w-auto" /></a></li>
+
                         </ul>
+
                     </div>
 
                 </div>
@@ -77,6 +87,73 @@
                 </div>
             </div>
         </nav>
+        <!-- Slider Section -->
+        <section class="my-14">
+            <div class="carousel w-full md:h-[400px]">
+                <div id="slide1" class=" hero carousel-item relative w-full  bg-banner-one bg-cover">
+                    <div class=" hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5">We supply highly quality organic products</p>
+                            <button class="btn bg-fruit-primary text-white border-none hover:text-black">Shop
+                                now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle text-white hover:text-black bg-black border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle  text-white hover:text-black bg-black border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="hero carousel-item relative w-full bg-banner-two bg-cover">
+                    <div class=" hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5">We supply highly quality organic products</p>
+                            <button class="btn bg-fruit-primary text-white border-none hover:text-black">Shop
+                                now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle  text-white hover:text-black bg-black border-none">❮</a>
+                        <a href="#slide3" class="btn btn-circle  text-white hover:text-black bg-black border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="hero carousel-item relative w-full bg-banner-three bg-cover">
+                    <div class=" hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5">We supply highly quality organic products</p>
+                            <button class="btn bg-fruit-primary text-white border-none hover:text-black">Shop
+                                now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle  text-white hover:text-black bg-black border-none">❮</a>
+                        <a href="#slide4" class="btn btn-circle  text-white hover:text-black bg-black border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="hero carousel-item relative bg-banner-four bg-cover">
+                    <div class=" hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5">We supply highly quality organic products</p>
+                            <button class="btn bg-fruit-primary text-white border-none hover:text-black">Shop
+                                now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle  text-white hover:text-black bg-black border-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle  text-white hover:text-black bg-black border-none">❯</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </header>
     <main class="container mx-auto">
 
