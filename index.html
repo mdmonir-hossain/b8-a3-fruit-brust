@@ -40,11 +40,11 @@
 </head>
 
 <body class="font-lato">
-    <header class="container mx-auto my-7">
+    <header class="container mx-auto my-7 px-5">
         <!-- navbar section  -->
         <nav>
             <div
-                class="navbar rounded-[50px] p-5 flex-row-reverse md:flex-row lg:flex-row bg-fruit-primary md:text-white lg:text-white  bg-white md:bg-fruit-primary lg:bg-fruit-primary ">
+                class="navbar rounded-[50px] lg:p-5 flex-row-reverse justify-between md:flex-row lg:flex-row bg-fruit-primary md:text-white lg:text-white  bg-white md:bg-fruit-primary lg:bg-fruit-primary ">
                 <!-- pc nav -->
                 <div class="navbar-start justify-end md:justify-start lg:justify-start ">
                     <div class="hidden lg:flex">
@@ -56,8 +56,8 @@
                         </ul>
                     </div>
                     <!-- mobile/tab nav -->
-                    <div class="dropdown relative">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <div class="dropdown relative mr-0">
+                        <label tabindex="0" class="  lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -71,7 +71,7 @@
                             <li><a>Shop</a></li>
                             <li><a>All Fruits</a></li>
                             <li class="md:hidden "><input type="text" placeholder="Search here"
-                                    class="input  rounded-3xl w-24 md:w-auto border-2 border-fruit-primary " />
+                                    class="input  rounded-3xl w-24 md:w-auto border-2 border-black " />
                                 <i
                                     class="fa-solid fa-magnifying-glass absolute text-black right-[13px] bottom-[13px]"></i>
                             </li>
@@ -80,9 +80,9 @@
 
                 </div>
                 <!-- navbar logo with text -->
-                <div class="navbar-center gap-x-5 ">
+                <div class="navbar-center gap-x-2 md:gap-x-5 lg:gap-x-3 ">
                     <img src="./images/logo.png" alt="">
-                    <h1 class="text-4xl font-bold">Fruit Burst</h1>
+                    <h1 class="text-2xl font-medium md:text-3xl lg:text-4xl lg:font-bold">Fruit Burst</h1>
                 </div>
                 <!-- navbar Search -->
                 <div class="navbar-end hidden md:flex lg:flex">
@@ -94,12 +94,12 @@
             </div>
         </nav>
         <!-- Slider/Banner Section -->
-        <section class="my-14 relative">
-            <div class="carousel w-full md:h-[400px] -z-10">
+        <section class="my-6 md:my-14  lg:my-10 relative">
+            <div class="carousel w-full md:h-[450px] -z-10">
                 <!-- Banner-1  -->
                 <div id="slide1" class=" hero carousel-item relative w-full  bg-banner-one bg-cover">
                     <div class=" hero-overlay bg-opacity-60"></div>
-                    <div class="hero-content text-center text-neutral-content">
+                    <div class="hero-content text-center text-neutral-content ">
                         <div class="max-w-md">
                             <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
                             <p class="mb-5">We supply highly quality organic products</p>
@@ -163,7 +163,7 @@
             </div>
             <!-- Fruits on Banner  -->
             <div
-                class="w-3/4  lg:w-3/4 mx-auto bg-white shadow-lg absolute -bottom-16 left-36  hidden md:grid lg:grid md:grid-cols-5 lg:grid-cols-5 gap-3 justify-center items-center text-center p-2 ">
+                class="w-3/4  lg:w-3/4 mx-auto bg-white shadow-lg absolute -bottom-16 lg:left-36 md:left-20 hidden md:grid lg:grid md:grid-cols-5 lg:grid-cols-5 gap-3 justify-center items-center text-center p-2 ">
                 <figure class="flex flex-col  items-center ">
                     <img src="./images/fruit1.png" alt="">
                     <figcaption>Grap</figcaption>
@@ -186,10 +186,65 @@
                 </figure>
             </div>
         </section>
-
     </header>
-    <main class="container mx-auto">
+    <main class="container mx-auto px-5">
+        <!-- Deal of the day Section  -->
+        <section class="lg:my-36 md:my-36">
+            <div class="flex flex-col text-center lg:text-left md:flex-col lg:flex-row justify-between">
+                <!-- Deal of the day text -->
+                <div class="mb-5">
+                    <h1 class="text-5xl font-extrabold mb-6">Deal of the day</h1>
+                    <p class="text-base font-medium">Contrary to popular belief, is not simply random text. It has roots
+                        in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <!-- Deal of the day Timer -->
+                <div class="grid grid-cols-4">
+                    <div class="flex">
+                        <h1 class="text-5xl font-extrabold mr-3">29 <br> <span
+                                class="text-2xl text-gray-500">Days</span></h1>
 
+                        <svg class="mt-3" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                                stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+
+                    </div>
+                    <div class="flex">
+                        <h1 class="text-5xl font-extrabold mr-3">15 <br> <span
+                                class="text-2xl text-gray-500">Hours</span></h1>
+
+                        <svg class="mt-3" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                                stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+
+                    </div>
+                    <div class="flex">
+                        <h1 class="text-5xl font-extrabold mr-3">25 <br> <span
+                                class="text-2xl text-gray-500">Minutes</span></h1>
+
+                        <svg class="mt-3" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                                stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+
+                    </div>
+                    <div class="flex ml-4">
+                        <h1 class="text-5xl font-extrabold ">08 <br> <span class="text-2xl text-gray-500">Seconds</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
