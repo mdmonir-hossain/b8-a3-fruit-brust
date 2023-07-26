@@ -45,16 +45,18 @@
         <nav>
             <div
                 class="navbar rounded-[50px] p-5 flex-row-reverse md:flex-row lg:flex-row bg-fruit-primary md:text-white lg:text-white  bg-white md:bg-fruit-primary lg:bg-fruit-primary ">
+                <!-- pc nav -->
                 <div class="navbar-start justify-end md:justify-start lg:justify-start ">
                     <div class="hidden lg:flex">
                         <ul class="menu menu-horizontal px-1">
                             <li><a>Home</a></li>
                             <li><a>About Us</a></li>
                             <li><a>Shop</a></li>
-                            <li><a>All Fruits</a></li>
+                            <li><a>All Fruits </a></li>
                         </ul>
                     </div>
-                    <div class="dropdown">
+                    <!-- mobile/tab nav -->
+                    <div class="dropdown relative">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6">
@@ -62,23 +64,27 @@
                                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
                         </label>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box">
+                        <ul tabindex="0"
+                            class="  menu menu-sm dropdown-content mt-3 z-10 p-2 shadow  rounded-box absolute right-0 bg-white md:text-red-400 md:w-40 md:left-0">
                             <li><a>Home</a></li>
                             <li><a>About Us</a></li>
                             <li><a>Shop</a></li>
                             <li><a>All Fruits</a></li>
-                            <li><a><input type="text" placeholder="Search here"
-                                        class="input  rounded-3xl w-24 md:w-auto" /></a></li>
-
+                            <li class="md:hidden "><input type="text" placeholder="Search here"
+                                    class="input  rounded-3xl w-24 md:w-auto border-2 border-fruit-primary " />
+                                <i
+                                    class="fa-solid fa-magnifying-glass absolute text-black right-[13px] bottom-[13px]"></i>
+                            </li>
                         </ul>
-
                     </div>
 
                 </div>
+                <!-- navbar logo with text -->
                 <div class="navbar-center gap-x-5 ">
                     <img src="./images/logo.png" alt="">
                     <h1 class="text-4xl font-bold">Fruit Burst</h1>
                 </div>
+                <!-- navbar Search -->
                 <div class="navbar-end hidden md:flex lg:flex">
                     <div class="form-control text-black relative">
                         <input type="text" placeholder="Search here" class="input  rounded-3xl w-24 md:w-auto" />
@@ -87,9 +93,10 @@
                 </div>
             </div>
         </nav>
-        <!-- Slider Section -->
-        <section class="my-14">
-            <div class="carousel w-full md:h-[400px]">
+        <!-- Slider/Banner Section -->
+        <section class="my-14 ">
+            <div class="carousel w-full md:h-[400px] -z-10">
+                <!-- Banner-1  -->
                 <div id="slide1" class=" hero carousel-item relative w-full  bg-banner-one bg-cover">
                     <div class=" hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
@@ -105,6 +112,7 @@
                         <a href="#slide2" class="btn btn-circle  text-white hover:text-black bg-black border-none">❯</a>
                     </div>
                 </div>
+                <!-- Banner-2  -->
                 <div id="slide2" class="hero carousel-item relative w-full bg-banner-two bg-cover">
                     <div class=" hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
@@ -120,6 +128,7 @@
                         <a href="#slide3" class="btn btn-circle  text-white hover:text-black bg-black border-none">❯</a>
                     </div>
                 </div>
+                <!-- Banner-3  -->
                 <div id="slide3" class="hero carousel-item relative w-full bg-banner-three bg-cover">
                     <div class=" hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
@@ -135,6 +144,7 @@
                         <a href="#slide4" class="btn btn-circle  text-white hover:text-black bg-black border-none">❯</a>
                     </div>
                 </div>
+                <!-- Banner-4  -->
                 <div id="slide4" class="hero carousel-item relative bg-banner-four bg-cover">
                     <div class=" hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
